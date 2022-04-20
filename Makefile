@@ -6,6 +6,12 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
+uninstall:
+	pip uninstall -r requirements.txt
+
+run:
+	python app.py
+
 test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
 	#python -m pytest --nbval notebook.ipynb
